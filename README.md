@@ -1,10 +1,10 @@
 # Robot Vacuum Simulator
 
-This is a Python simulation of a robot vacuum cleaner navigating and cleaning a 2D grid. The robot interprets instruction sets like `["forward", "turn-left", "clean"]`, handles obstructions, and adapts to different types of dirty terrain.
+This is a Python simulation of a robot vacuum cleaner navigating and cleaning a 2D grid. The robot interprets instruction sets like `["turn-left", "turn-right", "clean", "mop", "forward"]`, handles obstructions, and adapts to different types of dirty terrain.
 
 ## Features
 
-- Movement based on compass directions (`N`, `E`, `S`, `W`)
+- Movement based on compass directions 
 - Obstruction detection (walls, cats, other vacuums)
 - Dirty surface interactions (mud, wet, soapy tiles)
 - Multiple vacuum support
