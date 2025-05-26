@@ -1,0 +1,10 @@
+0 forward,clean,turn-right,turn-right,turn-right,forward,clean,turn-left,forward,clean
+1 forward,clean,turn-right,turn-right,turn-right,turn-right,forward,forward,clean,turn-left
+1 forward,forward,clean,turn-left,forward,turn-left,forward,clean,turn-right,forward
+0 turn-right,forward,forward,forward,clean,turn-left,forward,turn-right,clean,forward
+0 clean,forward,forward,turn-left,turn-left,forward,clean,turn-right,forward,forward
+1 forward,forward,turn-left,clean,turn-right,forward,forward,clean,turn-left,turn-left
+1 turn-left,forward,clean,turn-right,turn-right,forward,clean,forward,turn-left,forward
+0 forward,turn-right,clean,forward,forward,turn-left,forward,clean,turn-right,forward
+0 forward,forward,clean,turn-left,turn-left,forward,turn-right,clean,forward,forward
+1 turn-right,forward,clean,turn-left,forward,forward,clean,turn-right,turn-left,forward
