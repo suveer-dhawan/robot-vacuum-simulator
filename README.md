@@ -106,10 +106,10 @@ After running the simulation, log files (e.g., `log_0.txt`, `log_1.txt`) will be
 
 This project was developed incrementally, with each "Task" building upon the last, adding more realistic and complex behaviors to the robot vacuums and their environment:
 
-* **Task 3 (Robot Revolution):** Established the fundamental movement, basic cleaning (`True`/`False` for dirty/clean), and boundary handling. Introduced the concept of smearing dirt.
-* **Task 4 (Unexpected Obstruction):** Introduced a separate `obstruction_space` grid for static (`"w"` for wall) and dynamic (`"c"` for cat, `"r"` for robot) obstacles. Added logging of actual actions performed.
-* **Task 5 (Sticky Business):** Significantly expanded the `cleaning_space` to include various types of "dirt" (`"d"`, `"l"`, `"m"` for dirt, water, mud). Introduced specialized actions like `mop` and complex `forward` behaviors (slipping on water, varying smear effects).
-* **Task 6 (Scrub a' Dub Dub - *Current Implementation*):** The final stage, integrating all previous features. Added **soap (`"s"`)** as a new cleaning state with unique slipping and cleaning properties. Most importantly, it enabled **multi-robot simulation** with coordinated instruction processing and inter-robot collision detection.
+* **Part 1 (Robot Revolution):** Established the fundamental movement, basic cleaning (`True`/`False` for dirty/clean), and boundary handling. Introduced the concept of smearing dirt.
+* **Part 2 (Unexpected Obstruction):** Introduced a separate `obstruction_space` grid for static (`"w"` for wall) and dynamic (`"c"` for cat, `"r"` for robot) obstacles. Added logging of actual actions performed.
+* **Part 3 (Different Dirt Types):** Significantly expanded the `cleaning_space` to include various types of "dirt" (`"d"`, `"l"`, `"m"` for dirt, water, mud). Introduced specialized actions like `mop` and complex `forward` behaviors (slipping on water, varying smear effects).
+* **Part 4 (*Current Implementation*):** The final stage, integrating all previous features. Added **soap (`"s"`)** as a new cleaning state with unique slipping and cleaning properties. Most importantly, it enabled **multi-robot simulation** with coordinated instruction processing and inter-robot collision detection.
 
 The `vacuum_action` function, at its core, orchestrates the complex interaction logic between the robot's state, the type of surface it's on, and any potential obstructions, returning the **actual action taken**. The `perform_cleaning` function then manages the instruction parsing and sequential execution for potentially multiple robots, ensuring proper logging.
 
